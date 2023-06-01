@@ -45,4 +45,6 @@ nav {
 .nav_links img{
     height: 4.1vh;
     width: 2vw;
+    min-width: 25px;
+    min-height: 25px;
 }
