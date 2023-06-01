@@ -3,14 +3,14 @@ body {
 }
 
 header {
-    border-bottom: 1px solid grey;
+    border-bottom: 0.06vw solid grey;
 }
 
 .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 50px;  
+    margin: 2.7vh 3.25vw;  
     font-size: 1vw;
 }
 
