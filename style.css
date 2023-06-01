@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+
+header {
+    border-bottom: 1px solid grey;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;  
+    font-size: 1vw;
+}
+
+.navigation h2{
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_btns {
+    justify-content: space-evenly;
+    display: flex;
+    width: 30vw;
+}
+
+.nav_btns a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav_links {
+   display: flex;
+   justify-content: space-between;
+   width: 20%;
+}
+
+.nav_links img{
+    height: 4.1vh;
+    width: 2vw;
+}
