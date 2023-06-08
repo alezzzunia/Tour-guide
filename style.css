@@ -160,3 +160,48 @@ nav {
 .fa-chevron-right {
     right: 0.91vw;
 }
+
+/* Features */
+
+.features {
+    margin-top: 13.85vh;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.features_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-collapse: collapse;
+}
+
+.features_grid img {
+    width: 3.125vw;
+    height: 6.64vh;
+}
+
+.features_grid div {
+    border-color: rgb(220, 220, 220);
+    border-collapse: collapse;
+    padding: 6.92vh 1.95vw;
+}
+
+.one {
+    border-bottom: 0.13vw solid;
+}
+
+.two {
+    border-left: 0.13vw solid;
+    border-bottom: 0.13vw solid;
+    border-right: 0.13vw solid;
+}
+
+.three {
+    border-bottom: 0.13vw solid;
+}
+
+.five {
+    border-left: 0.13vw solid;
+    border-right: 0.13vw solid;
+}
