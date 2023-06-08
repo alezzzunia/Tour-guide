@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    border-bottom: 0.06vw solid grey;
+    border-bottom: 0.06vw solid rgb(220, 220, 220);
 }
 
 .navigation {
@@ -56,6 +56,8 @@ nav {
 .block1 {
     display: grid;
     grid-template-columns: 50% 50%;
+    border-bottom: 0.06vw solid rgb(220, 220, 220);
+    font-size: 1vw;
 }
 
 .block1_left {
@@ -75,11 +77,12 @@ nav {
 .block1_txt button {
     color: darkgrey;
     border-color: gray;
-    border: 1px solid;
-    border-radius: 5px;
+    border: 0.06vw solid;
+    border-radius: 0.32vw;
     background-color: white;
-    padding: 10px 30px;
-    margin-top: 13px;
+    padding: 1.38vh 1.95vw;
+    margin-top: 1.8vh;
+    font-size: 1vw;
 }
 
 .block1_txt button:hover {
