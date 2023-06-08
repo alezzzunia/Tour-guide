@@ -121,3 +121,37 @@ nav {
     background-position: bottom;
     background-image: url('./pictures/campfire.jpg');
 }
+
+/* Gallery */
+
+.gallery {
+    margin-top: 8.3vh;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.gallery_photos {
+    margin: 0;
+    height: 41.5vh;
+    /* width: 100%; */
+    display: flex;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+}
+
+.fa-solid {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    opacity: 0.6;
+    top: 50%;
+}
+
+.fa-chevron-left {
+    left: 0.91vw;
+}
+
+.fa-chevron-right {
+    right: 0.91vw;
+}
