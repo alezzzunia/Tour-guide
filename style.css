@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -130,10 +131,13 @@ nav {
     font-size: 1vw;
 }
 
+.gallery h1 {
+    margin-bottom: 6.23vh;
+}
+
 .gallery_photos {
     margin: 0;
     height: 41.5vh;
-    /* width: 100%; */
     display: flex;
     vertical-align: top;
     position: relative;
@@ -205,3 +209,97 @@ nav {
     border-left: 0.13vw solid;
     border-right: 0.13vw solid;
 }
+
+/* Write to us */
+
+.forms_block {
+    text-align: center;
+    font-size: 1vw;
+    margin: 13.85vh 12vw;
+}
+
+.general_inf {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+    text-align: left;
+}
+
+.general_inf input {
+    width: 100%;
+    height: 3.5vh;
+    border-radius: 0.19vw;
+    border-color: rgb(220, 220, 220);
+    border-width: 0.06vw;
+    margin-top: 1.1vh;
+}
+
+.radios {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.radios label {
+    font-size: 1vw;
+}
+
+.radios input {
+    margin-left: 0.97vw;
+    margin-right: 0.455vw;
+    background-color: gray;
+    width: 1vw;
+    border-width: 0.06vw;
+}
+
+.select {
+    text-align: left;
+    margin-top: 3vh;
+}
+
+select {
+    margin-top: 1vh;
+    border-color: rgb(220, 220, 220);
+    border-width: 0.06vw;
+    width: 100%;
+    height: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1vw;
+}
+
+.message {
+    margin-top: 3vh;
+    text-align: left;
+}
+
+.message input {
+    width: 100%;
+    height: 20.77vh;
+    border-color: rgb(220, 220, 220);
+    border-width: 0.06vw;
+}
+
+.send {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send input {
+    border-color: rgb(220, 220, 220);
+    border-width: 0.06vw;
+    width: 1;
+}
+
+.send label {
+    font-size: 1vw;
+}
+
+.send button {
+    margin: 0;
+}
+
+/* border-bottom: 0.06vw solid rgb(220, 220, 220); */
