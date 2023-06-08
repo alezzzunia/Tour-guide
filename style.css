@@ -43,8 +43,52 @@ nav {
 }
 
 .nav_links img{
-    height: 4.1vh;
-    width: 2vw;
-    min-width: 25px;
-    min-height: 25px;
+    height: 4.15vh;
+    width: 1.95vw;
+    /* min-width: 15px;
+    min-height: 20px;  
+    max-width: 40px;
+    max-height: 35px; */
+}
+
+/* Block 1 */
+
+.block1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.block1_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 11.2vh;
+    padding-left: 12.38vw;
+    padding-right: 11.73vw;
+    padding-bottom: 15.2vh;
+}
+
+.block1_txt h1 {
+    font-weight: 300;
+}
+
+.block1_txt button {
+    color: darkgrey;
+    border-color: gray;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px 30px;
+    margin-top: 13px;
+}
+
+.block1_txt button:hover {
+    cursor: pointer;
+}
+
+.block1_right{
+    background-image: url('./pictures/rewilding_fire.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
