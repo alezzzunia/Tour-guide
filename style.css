@@ -51,30 +51,32 @@ nav {
     max-height: 35px; */
 }
 
-/* Block 1 */
+/* Main parts */
 
-.block1 {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.blocks {
     border-bottom: 0.06vw solid rgb(220, 220, 220);
     font-size: 1vw;
+    display: grid;
 }
 
-.block1_left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main_photos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_block_txt {
     padding-top: 11.2vh;
     padding-left: 12.38vw;
     padding-right: 11.73vw;
     padding-bottom: 15.2vh;
 }
 
-.block1_txt h1 {
+.main_h1 {
     font-weight: 300;
 }
 
-.block1_txt button {
+.main_btns {
     color: darkgrey;
     border-color: gray;
     border: 0.06vw solid;
@@ -85,13 +87,37 @@ nav {
     font-size: 1vw;
 }
 
-.block1_txt button:hover {
+.main_btns:hover {
     cursor: pointer;
 }
 
-.block1_right{
+/* Block 1 */
+
+.block1 {
+    grid-template-columns: 50% 50%;
+}
+
+.block1_photo{
     background-image: url('./pictures/rewilding_fire.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+/* Block 2 */
+
+.block2 {
+    grid-template-columns: 30% 70%;
+}
+
+.block2_photo {
+    background-image: url('./pictures/story_fire.jpg');
+}
+
+/* Block 3 */
+
+.block3 {
+    grid-template-columns: 70% 30%;
+}
+
+.block3_photo {
+    background-position: bottom;
+    background-image: url('./pictures/campfire.jpg');
 }
