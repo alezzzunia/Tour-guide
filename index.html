@@ -13,10 +13,10 @@
             <h2>TOUR-GUIDE</h2>
             <nav>
                 <div class="nav_btns">
-                    <a href="#">Stories</a>
-                    <a href="#">Gallery</a>
-                    <a href="#">Features</a>
-                    <a href="#">Write to us</a>
+                    <a href="#stories">Stories</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#features">Features</a>
+                    <a href="#forms_block">Write to us</a>
                 </div>
 
                 <div class="nav_links">
@@ -32,7 +32,7 @@
 
     <main>
         <!-- Block 1 -->
-        <div class="blocks block1">
+        <div class="blocks block1" id="stories">
                 <div class="main_block_txt">
                     <h1 class="main_h1">Let's hit the road</h1>
                     <p>
@@ -68,20 +68,48 @@
         </div>
         
         <!-- Gallery -->
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             <h1 class="main_h1">Gallery</h1>
             <div class="gallery_photos">
                 <i class="fa-solid fa-chevron-left"></i>
-                <img src="./pictures/camp.jpg" alt="">
-                <img src="./pictures/campfire-cooking.png" alt="">
-                <img src="./pictures/camping-dark-forest-light.jpg" alt="">
-                <img src="./pictures/Bazaar.webp" alt="">
+                <div class="photo photo1">
+                <!-- <img src="./pictures/camp.jpg" alt=""> -->
+                <div class="photo_txt">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi voluptatem explicabo iste velit, ducimus.</p>
+                    <a href="#"><button class="main_btns photo_btns">MORE</button></a>
+                </div>
+                </div>
+                <div class="photo photo2">
+                <!-- <img src="./pictures/campfire-cooking.png" alt=""> -->
+                <div class="photo_txt">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi voluptatem explicabo iste velit, ducimus.</p>
+                    <a href="#"><button class="main_btns photo_btns">MORE</button></a>
+                </div>
+                </div>  
+                <div class="photo photo3">
+                <!-- <img src="./pictures/camping-dark-forest-light.jpg" alt=""> -->
+                <div class="photo_txt">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi voluptatem explicabo iste velit, ducimus.</p>
+                    <a href="#"><button class="main_btns photo_btns">MORE</button></a>
+                </div>
+                </div>
+                <div class="photo photo4">
+                <!-- <img src="./pictures/Bazaar.webp" alt=""> -->
+                <div class="photo_txt">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nisi voluptatem explicabo iste velit, ducimus.</p>
+                    <a href="#"><button class="main_btns photo_btns">MORE</button></a>
+                </div>
+                </div>
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
         </div>
 
         <!-- Features -->
-        <div class="features">
+        <div class="features" id="features">
             <h1 class="main_h1">Features</h1>
             <div class="features_grid">
                 <div class="one">
@@ -142,7 +170,7 @@
         </div>
 
         <!-- Write to us -->
-        <div class="forms_block">
+        <div class="forms_block" id="forms_block">
             <h1 class="main_h1">Write to us</h1>
             <form action="">
                 <div class="general_inf">
@@ -196,6 +224,20 @@
         </div>
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer_links">
+            <a href="#"><img src="./pictures/twitter-128.png" alt=""></a>
+            <a href="#"><img src="./pictures/facebook-128.png" alt=""></a>
+            <a href="#"><img src="./pictures/instagram-2-128.png" alt=""></a>
+            <a href="#"><img src="./pictures/youtube-128.png" alt=""></a>
+            <a href="#"><img src="./pictures/gmail-128.png" alt=""></a>
+        </div>
+
+        <span>UNITED 2019</span>
+    </footer>
+
     <script src="https://kit.fontawesome.com/4c969d954b.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
