@@ -33,6 +33,67 @@ nav {
     width: 30vw;
 }
 
+.container {
+    /* width: 100%; */
+    min-height: 0.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    right: 0;
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 50px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .toggle span {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #1863ff;
+    transition: 0.5s;
+  }
+  
+  .toggle span:nth-child(2) {
+    transform: translateY(-15px);
+    width: 25px;
+    left: 5px;
+  }
+  
+  .toggle span:nth-child(3) {
+    transform: translateY(15px);
+    width: 15px;
+    left: 5px;
+  }
+  
+  .toggle.active span:nth-child(1) {
+    transform: translateX(60px);
+  }
+  
+  .toggle.active span:nth-child(2) {
+    width: 40px;
+    transform: translateX(0) rotate(45deg);
+    transition-delay: 0.2s;
+  }
+  
+  .toggle.active span:nth-child(3) {
+    width: 40px;
+    transform: translateX(0) rotate(-45deg);
+    transition-delay: 0.4s;
+  }
+
 .nav_btns a {
     text-decoration: none;
     color: grey;
@@ -149,6 +210,9 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo:hover .photo_txt {
@@ -194,14 +258,14 @@ nav {
     display: none;
 } */
 
-.gallery_photos {
-    /* margin: 0;
+/* .gallery_photos {
+    margin: 0;
     height: 41.5vh;
     display: flex;
     vertical-align: top;
     position: relative;
-    overflow: hidden; */
-}
+    overflow: hidden;
+}*/
 
 .fa-solid {
     position: absolute;
@@ -347,10 +411,15 @@ select {
     align-items: center;
 }
 
+.check_robot {
+    display: flex;
+    align-items: center;
+}
+
 .send input {
     border-color: rgb(220, 220, 220);
     border-width: 0.06vw;
-    width: 1;
+    width: 1vw;
 }
 
 .send label {
@@ -381,4 +450,142 @@ footer {
     margin: 0 0.32vw;
     padding: 0.69vh 0.32vw;
     border-radius: 5.85vw;
+}
+
+footer span {
+    font-size: 2vw;
+}
+
+/* Adaptation */
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    .nav_links {
+        display: none;
+    }
+
+    .blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main_block_txt {
+        padding: 7vh 3vw;
+    }
+
+    .gallery_photos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .photo3, .photo4 {
+        display: none;
+    }
+
+    .features_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .four {
+        border-left: 0.06vw solid rgb(220, 220, 220);
+        border-bottom: 0.06vw solid rgb(220, 220, 220);
+    }
+
+    .features_grid img {
+        /* width: 3vw; */
+        height: 4vh;
+    }
+
+    .footer_links img{
+        height: 1.7vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation {
+        justify-content: space-between;
+    }
+    
+    .navigation h2 {
+        margin-left: 2vw;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .nav_btns {
+        display: none;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .block1_photo {
+        order: 1;
+    }
+
+    .block3_photo {
+        order: 1;
+    }
+
+    .block_txt {
+        order: 2;
+    }
+    
+    .main_block_txt {
+        padding: 4vh 2.3vw;
+    }
+
+    .main_btns {
+        border-radius: 0.5vw;
+        padding: 0.5vh 1vw;
+        font-size: 1vw;
+    }
+
+    .gallery_photos {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .photo2, .photo3, .photo4 {
+        display: none;
+    }
+
+    .features_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .five {
+        border-top: 0.06vw solid rgb(220, 220, 220);
+        border-bottom: 0.06vw solid rgb(220, 220, 220);
+    }
+
+    .six {
+        border-bottom: 0.06vw solid rgb(220, 220, 220);
+    }
+
+    .general_inf {
+        display: block;
+    }
+
+    .general_inf input {
+        margin-top: 0.4vh;
+        margin-bottom: 0.8vh;
+    }
+
+    .features_grid img {
+        /* width: 3vw; */
+        height: 3vh;
+    }
+
+    .footer_links img{
+        height: 1.4vh;
+        width: 2vw;
+    }
 }
